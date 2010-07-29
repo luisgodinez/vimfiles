@@ -1,6 +1,14 @@
 "mapping leader key to comma (,) more accessible
 let mapleader = ","
 
+"source the (g)vimrc file after saving it
+autocmd bufwritepost .vimrc source $MYVIMRC
+autocmd bufwritepost .gvimrc source $MYGVIMRC
+
+"edit (g)vimrc file with <leader>v
+nmap <leader>v :tabedit $MYVIMRC<CR>
+nmap <leader>gv :tabedit $MYGVIMRC<CR>
+
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
