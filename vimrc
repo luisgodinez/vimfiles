@@ -26,7 +26,7 @@ set showbreak=...
 set wrap linebreak nolist
 
 "add some line space for easy reading
-set linespace=4
+set linespace=2
 
 "disable visual bell
 set visualbell t_vb=
@@ -49,7 +49,7 @@ set statusline+=\ %y                           "filetype
 set statusline+=%r                             "read only flag
 set statusline+=%m                             "modified flag
 set statusline+=%{rvm#statusline_ft_ruby()}    "rvm prompt
-"set statusline+=%{fugitive#statusline()}       "git status
+set statusline+=%{fugitive#statusline()}       "git status
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -82,6 +82,10 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 set autoindent
+"per file type
+"autocmd FileType css        setlocal shiftwidth=4 softtabstop=4
+"autocmd FileType javascript setlocal shiftwidth=4 softtabstop=4
+"autocmd FileType html       setlocal shiftwidth=4 softtabstop=4
 
 "folding settings
 set foldmethod=indent     "fold based on indent
@@ -150,6 +154,9 @@ inoremap <C-L> <C-O>:nohls<CR>
 
 "map to bufexplorer
 nnoremap <leader>b :BufExplorer<cr>
+
+"map NERDTreeToogle
+nnoremap <leader>T :NERDTreeToggle<cr>
 
 "map to CommandT TextMate style finder
 nnoremap <leader>t :CommandT<CR>
