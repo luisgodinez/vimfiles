@@ -87,6 +87,8 @@ set autoindent
 "autocmd FileType javascript setlocal shiftwidth=4 softtabstop=4
 "autocmd FileType html       setlocal shiftwidth=4 softtabstop=4
 
+au! BufRead,BufNewFile *.json setfiletype javascript
+
 "folding settings
 set foldmethod=indent     "fold based on indent
 set foldnestmax=3         "deepest fold is 3 levels
@@ -94,7 +96,7 @@ set nofoldenable          "don't fold by default
 
 set wildmode=list:longest    "make cmdline tab completion similar to bash
 set wildmenu                 "enable ctrl-n and ctrl-p to scroll thru matches
-set wildignore=*.o,*.obj,*~  "stuff to ignore when tab completing
+set wildignore=*.o,*.obj,*~,.DS_Store  "stuff to ignore when tab completing
 
 "display tabs and trailing spaces
 "set list
