@@ -23,7 +23,8 @@ set hlsearch  "highlight searches by default
 
 set number    "add line numbers
 set showbreak=...
-set wrap linebreak nolist
+"set wrap linebreak nolist
+set nowrap
 
 "add some line space for easy reading
 set linespace=2
@@ -131,8 +132,8 @@ set ttymouse=xterm2
 set hidden
 
 "Command-T configuration
-let g:CommandTMaxHeight=10
-let g:CommandTMatchWindowAtTop=1
+"let g:CommandTMaxHeight=10
+"let g:CommandTMatchWindowAtTop=1
 
 " keep selection after indent
 vmap > >gv
@@ -161,7 +162,10 @@ nnoremap <leader>b :BufExplorer<cr>
 nnoremap <leader>T :NERDTreeToggle<cr>
 
 "map to CommandT TextMate style finder
-nnoremap <leader>t :CommandT<CR>
+"nnoremap <leader>t :CommandT<CR>
+
+"map to FuzzyFinder
+map <leader>t :FuzzyFinderTextMate<Enter>
 
 "make Y consistent with C and D
 nnoremap Y y$
