@@ -9,6 +9,9 @@ autocmd bufwritepost .gvimrc source $MYGVIMRC
 nmap <leader>v :tabedit $MYVIMRC<CR>
 nmap <leader>gv :tabedit $MYGVIMRC<CR>
 
+"map :W to :w
+cmap W w
+
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
@@ -100,9 +103,23 @@ set wildmenu                 "enable ctrl-n and ctrl-p to scroll thru matches
 set wildignore=*.o,*.obj,*~,.DS_Store  "stuff to ignore when tab completing
 
 "display tabs and trailing spaces
-"set list
-"set listchars=tab:\ \ ,extends:>,precedes:<
-" disabling list because it interferes with soft wrap
+set listchars=tab:▸\ ,eol:¬
+set list
+
+" Strip trailing white spaces before file is saved
+" function StripTrailingWhiteSpaces()
+"   " Store the current position
+"   let _s=@/
+"   let l = line(".")
+"   let c = col(".")
+"   " Strip white spaces
+"   %s/\s\+$//e
+"   " Restore previous search history and cursor position
+"   let @/=_s
+"   call cursor(l, c)
+" endfunction
+" autocmd BufWritePre *.js,*.rb,*.html,*.mu,*.json,*.css,*.erb call StripTrailingWhiteSpaces()
+
 
 set formatoptions-=o "don't continue comments when pushing o/O
 
