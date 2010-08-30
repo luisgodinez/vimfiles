@@ -176,7 +176,7 @@ inoremap <C-L> <C-O>:nohls<CR>
 nnoremap <leader>b :BufExplorer<cr>
 
 "map NERDTreeToogle
-nnoremap <leader>T :NERDTreeToggle<cr>
+"nnoremap <leader>T :NERDTreeToggle<cr>
 
 "map to CommandT TextMate style finder
 "nnoremap <leader>t :CommandT<CR>
