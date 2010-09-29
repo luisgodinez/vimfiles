@@ -1,3 +1,11 @@
+set t_Co=256
+
+" Set color schemes
+colorscheme lucius
+
+" Highglight current line
+set cursorline!
+
 "mapping leader key to comma (,) more accessible
 let mapleader = ","
 
@@ -87,8 +95,9 @@ set softtabstop=4
 set expandtab
 set autoindent
 "per file type
-"autocmd FileType css        setlocal shiftwidth=4 softtabstop=4
-"autocmd FileType javascript setlocal shiftwidth=4 softtabstop=4
+autocmd FileType ruby        setlocal shiftwidth=2 softtabstop=2
+autocmd FileType yaml        setlocal shiftwidth=2 softtabstop=2
+autocmd FileType javascript setlocal shiftwidth=4 softtabstop=4
 "autocmd FileType html       setlocal shiftwidth=4 softtabstop=4
 
 au! BufRead,BufNewFile *.json setfiletype javascript
@@ -184,6 +193,9 @@ nnoremap <leader>b :BufExplorer<cr>
 "map to FuzzyFinder
 map <leader>t :FuzzyFinderTextMate<Enter>
 
+"map to TComment
+map tt :TComment<CR>
+
 "make Y consistent with C and D
 nnoremap Y y$
 
@@ -195,3 +207,6 @@ let g:ragtag_global_maps = 1
 "mark syntax errors with :signs
 let g:syntastic_enable_signs=1
 
+"zencoding
+let g:user_zen_expandabbr_key = '<C-e>'
+let g:use_zen_complete_tag = 1
