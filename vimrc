@@ -97,7 +97,7 @@ set autoindent
 "per file type
 autocmd FileType ruby        setlocal shiftwidth=2 softtabstop=2
 autocmd FileType yaml        setlocal shiftwidth=2 softtabstop=2
-autocmd FileType javascript setlocal shiftwidth=4 softtabstop=4
+autocmd FileType javascript  setlocal shiftwidth=4 softtabstop=4
 "autocmd FileType html       setlocal shiftwidth=4 softtabstop=4
 
 au! BufRead,BufNewFile *.json setfiletype javascript
