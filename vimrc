@@ -64,7 +64,6 @@ set statusline+=%{rvm#statusline_ft_ruby()}    "rvm prompt
 set statusline+=%{fugitive#statusline()}       "git status
 
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 "display a warning if &paste is set
@@ -203,9 +202,6 @@ nnoremap Y y$
 inoremap <M-o>       <Esc>o
 inoremap <C-j>       <Down>
 let g:ragtag_global_maps = 1
-
-"mark syntax errors with :signs
-let g:syntastic_enable_signs=1
 
 "zencoding
 let g:user_zen_expandabbr_key = '<C-e>'
