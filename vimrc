@@ -1,7 +1,7 @@
 set t_Co=256
 
 " Set color schemes
-colorscheme lucius
+colorscheme railscasts
 
 " Highglight current line
 set cursorline!
@@ -94,9 +94,7 @@ set softtabstop=4
 set expandtab
 set autoindent
 "per file type
-autocmd FileType ruby        setlocal shiftwidth=2 softtabstop=2
-autocmd FileType yaml        setlocal shiftwidth=2 softtabstop=2
-autocmd FileType javascript  setlocal shiftwidth=4 softtabstop=4
+autocmd FileType ruby,yaml        setlocal shiftwidth=2 softtabstop=2
 "autocmd FileType html       setlocal shiftwidth=4 softtabstop=4
 
 au! BufRead,BufNewFile *.json setfiletype javascript
@@ -128,6 +126,7 @@ set list
 " endfunction
 " autocmd BufWritePre *.js,*.rb,*.html,*.mu,*.json,*.css,*.erb call StripTrailingWhiteSpaces()
 
+nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 set formatoptions-=o "don't continue comments when pushing o/O
 

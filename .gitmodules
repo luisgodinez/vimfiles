@@ -16,9 +16,6 @@
 [submodule "bundle/ragtag"]
 	path = bundle/ragtag
 	url = http://github.com/tpope/vim-ragtag.git
-[submodule "bundle/rails"]
-	path = bundle/rails
-	url = http://github.com/tpope/vim-rails.git
 [submodule "bundle/ruby"]
 	path = bundle/ruby
 	url = http://github.com/vim-ruby/vim-ruby.git
@@ -28,3 +25,6 @@
 [submodule "bundle/vividchalk"]
 	path = bundle/vividchalk
 	url = http://github.com/tpope/vim-vividchalk.git
+[submodule "bundle/rails"]
+	path = bundle/rails
+	url = http://github.com/mexpolk/vim-rails.git
