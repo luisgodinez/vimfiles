@@ -28,3 +28,9 @@
 [submodule "bundle/rails"]
 	path = bundle/rails
 	url = http://github.com/mexpolk/vim-rails.git
+[submodule "snippets"]
+	path = snippets
+	url = git@github.com:edgarjs/snipmate-snippets.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = http://github.com/msanders/snipmate.vim.git
