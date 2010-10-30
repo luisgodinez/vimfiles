@@ -16,6 +16,7 @@ autocmd bufwritepost .gvimrc source $MYGVIMRC
 "edit (g)vimrc file with <leader>v
 nmap <leader>v :tabedit $MYVIMRC<CR>
 nmap <leader>gv :tabedit $MYGVIMRC<CR>
+nmap <leader>s :tabedit ~/.vim/snippets<CR>
 
 "map :W to :w
 cmap W w
