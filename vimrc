@@ -1,7 +1,7 @@
 set t_Co=256
 
 " Set color schemes
-colorscheme railscasts
+colorscheme lucius
 
 " Highglight current line
 set cursorline!
@@ -19,7 +19,7 @@ nmap <leader>gv :tabedit $MYGVIMRC<CR>
 nmap <leader>s :tabedit ~/.vim/snippets<CR>
 
 "map :W to :w
-cmap W w
+"cmap W w
 
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -61,7 +61,6 @@ set statusline+=%h                             "help file flag
 set statusline+=\ %y                           "filetype
 set statusline+=%r                             "read only flag
 set statusline+=%m                             "modified flag
-set statusline+=%{rvm#statusline_ft_ruby()}    "rvm prompt
 set statusline+=%{fugitive#statusline()}       "git status
 
 set statusline+=%#warningmsg#
@@ -95,7 +94,7 @@ set softtabstop=4
 set expandtab
 set autoindent
 "per file type
-autocmd FileType ruby,yaml,html,eruby setlocal shiftwidth=2 softtabstop=2
+autocmd FileType ruby,yaml,html,eruby,gitconfig,css setlocal shiftwidth=2 softtabstop=2
 "autocmd FileType html       setlocal shiftwidth=4 softtabstop=4
 
 au! BufRead,BufNewFile *.json setfiletype javascript
