@@ -1,4 +1,4 @@
-set t_Co=256
+set t_Co=256 "colorfull terminal
 
 " Set color schemes
 colorscheme lucius
@@ -31,7 +31,7 @@ set showcmd   "show incomplete cmds down the bottom
 set showmode  "show current mode down the bottom
 
 set incsearch "find the next match as we type the search
-set hlsearch  "highlight searches by default
+" set hlsearch  "highlight searches by default
 
 set number    "add line numbers
 set showbreak=...
@@ -108,6 +108,14 @@ set wildmode=list:longest    "make cmdline tab completion similar to bash
 set wildmenu                 "enable ctrl-n and ctrl-p to scroll thru matches
 set wildignore=*.o,*.obj,*~,.DS_Store  "stuff to ignore when tab completing
 
+set ignorecase "ignore case when searching
+set smartcase
+
+set title "set terminal title to the editing file
+
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+
 "display tabs and trailing spaces
 set listchars=tab:▸\ ,eol:¬
 set list
@@ -131,7 +139,7 @@ nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 set formatoptions-=o "don't continue comments when pushing o/O
 
 "vertical/horizontal scroll off settings
-set scrolloff=3
+set scrolloff=10
 set sidescrolloff=7
 set sidescroll=1
 
