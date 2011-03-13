@@ -139,7 +139,7 @@ nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 set formatoptions-=o "don't continue comments when pushing o/O
 
 "vertical/horizontal scroll off settings
-set scrolloff=10
+set scrolloff=3
 set sidescrolloff=7
 set sidescroll=1
 
@@ -197,7 +197,10 @@ nnoremap <leader>b :BufExplorer<cr>
 "nnoremap <leader>t :CommandT<CR>
 
 "map to FuzzyFinder
-map <leader>t :FuzzyFinderTextMate<Enter>
+map <leader>T :FuzzyFinderTextMate<Enter>
+
+"copy to system clipboard
+vmap <leader>c y:call system("pbcopy", getreg("\""))<CR>
 
 "map to TComment
 map tt :TComment<CR>
