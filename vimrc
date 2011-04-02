@@ -18,6 +18,9 @@ nmap <leader>v :tabedit $MYVIMRC<CR>
 nmap <leader>gv :tabedit $MYGVIMRC<CR>
 nmap <leader>s :tabedit ~/.vim/snippets<CR>
 
+" Align assignments
+vmap <leader>a :Tab /
+
 "map :W to :w
 "cmap W w
 
@@ -204,6 +207,9 @@ vmap <leader>c y:call system("pbcopy", getreg("\""))<CR>
 
 "map to TComment
 map tt :TComment<CR>
+
+"map rspec
+map <leader>t :w\|!rspec %<CR>
 
 "make Y consistent with C and D
 nnoremap Y y$

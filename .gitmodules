@@ -34,3 +34,6 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = http://github.com/msanders/snipmate.vim.git
+[submodule "bundle/tabuler"]
+	path = bundle/tabuler
+	url = https://github.com/godlygeek/tabular.git
