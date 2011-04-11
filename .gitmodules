@@ -37,3 +37,6 @@
 [submodule "bundle/tabuler"]
 	path = bundle/tabuler
 	url = https://github.com/godlygeek/tabular.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git

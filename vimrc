@@ -194,13 +194,13 @@ inoremap <C-L> <C-O>:nohls<CR>
 nnoremap <leader>b :BufExplorer<cr>
 
 "map NERDTreeToogle
-"nnoremap <leader>T :NERDTreeToggle<cr>
+nnoremap <leader>T :NERDTreeToggle<cr>
 
 "map to CommandT TextMate style finder
 "nnoremap <leader>t :CommandT<CR>
 
 "map to FuzzyFinder
-map <leader>T :FuzzyFinderTextMate<Enter>
+map <leader>O :FuzzyFinderTextMate<Enter>
 
 "copy to system clipboard
 vmap <leader>c y:call system("pbcopy", getreg("\""))<CR>
