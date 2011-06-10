@@ -2,6 +2,7 @@ set t_Co=256 "colorfull terminal
 
 " Set color schemes
 colorscheme lucius
+" colorscheme vividchalk
 
 " Highglight current line
 set cursorline!
@@ -10,8 +11,8 @@ set cursorline!
 let mapleader = ","
 
 "source the (g)vimrc file after saving it
-autocmd bufwritepost .vimrc source $MYVIMRC
-autocmd bufwritepost .gvimrc source $MYGVIMRC
+" autocmd bufwritepost .vimrc source $MYVIMRC
+" autocmd bufwritepost .gvimrc source $MYGVIMRC
 
 "edit (g)vimrc file with <leader>v
 nmap <leader>v :tabedit $MYVIMRC<CR>
@@ -209,7 +210,7 @@ vmap <leader>c y:call system("pbcopy", getreg("\""))<CR>
 map tt :TComment<CR>
 
 "map rspec
-map <leader>t :w\|!rspec %<CR>
+map <leader>t :w\|!rspec --no-colour %<CR>
 
 "make Y consistent with C and D
 nnoremap Y y$
